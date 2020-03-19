@@ -1,0 +1,101 @@
+.information {
+    display: inline-block;
+    width: 70%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    box-shadow:0px 5px 10px #000000;
+    border: 2px solid black;
+    background: linear-gradient(#5c690a, #611f1d, #5c690a);
+    border-radius: 60px;
+}
+
+.information h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.information ul {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    width: 80%;
+}
+
+.information li {
+    display: block;
+}
+
+.description{
+    width: 30%;
+    text-align: right;
+    background-color: #376c81;
+}
+
+.element{
+    background-color: #900000;
+    color: #fcffc6;
+    width: 65%;
+}
+
+.description, .element{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow:0px 5px 15px #000000;
+    padding-top : 10px;
+    padding-bottom: 10px;
+}
+
+.element a {
+    color: lightsteelblue;
+}
+
+.element img{
+    max-height: 30px;
+    width: auto;
+}
+
+@media handheld , screen and (max-width:60em){
+    .information {
+        width: 80%;
+    }
+
+    .description, .element{
+        font-size: 0.9em;
+    }
+}
+
+@media handheld , screen and (max-width:50em){
+    .information {
+        width: 90%;
+    }
+
+    .information ul {
+        width: 90%;
+    }
+
+    .description, .element{
+        font-size: 0.8em;
+    }
+}
+
+@media handheld , screen and (max-width:37em){
+    .information {
+        width: 90%;
+        border-style: none;
+        border-radius: 0px;
+    }
+
+    .information ul {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    .description, .element{
+        font-size: 0.9em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

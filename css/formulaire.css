@@ -1,0 +1,99 @@
+form{
+    box-shadow:0px 5px 15px #000000;
+    display: inline-block;
+    padding: 2%;
+    text-decoration:none;
+    width:50%;
+    border-radius:100px;
+    margin-bottom: 10px;
+    background: linear-gradient(#a0a0a0, #b7b7b7, #b7b7b7, #a0a0a0);
+}
+
+form p{
+    color: black;
+}
+
+label {
+    margin-top:10px;
+    display:block;
+}
+
+input, select{
+    background-color:transparent;
+    border-color: black;
+    border-radius:5px;
+    text-align: center;
+    width:50%;
+    height: 50px;
+    font-size: 1.5em;
+    box-shadow:0px 5px 10px #000000;
+    color: black;
+    margin-bottom: 10px;
+}
+
+select {
+    text-align-last:center;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: transparent;
+    width:30%;
+    margin-top: 20px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+
+    background-color: #900000;
+    color: #fcffc6;
+
+}
+
+
+@media handheld , screen and (max-width:70em){
+
+    form {
+        left: 15%;
+        width:66%;
+    }
+
+}
+
+
+@media handheld , screen and (max-width:50em){
+
+    input[type=submit], input[type=reset]{
+        width: 60%;
+    }
+
+    input, select {
+        width: 80%;
+    }
+
+    input, select, input[type=submit], input[type=reset] {
+
+    }
+}
+
+@media handheld , screen and (max-width:37em){
+    form {
+        width: 80%;
+        border-radius: 0px;
+    }
+
+    input[type=submit], input[type=reset]{
+        background-color: transparent;
+        margin-top: 20px;
+        cursor:pointer;
+        width: 60%;
+    }
+
+    input, select {
+        width: 80%;
+    }
+
+    input, select, input[type=submit], input[type=reset] {
+        border-radius: 0px;
+        border-style: none;
+    }
+}

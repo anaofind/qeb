@@ -1,0 +1,12 @@
+.erreur {
+    text-align: center ;
+    position: relative;
+    background-color:#900000;
+    color:#fcffc6;
+    border: 2px solid white;
+    height: 100px;
+    padding: 1%;
+    margin-bottom: 30px;
+    width: 60%;
+    left: 19%;
+}

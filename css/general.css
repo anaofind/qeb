@@ -1,0 +1,158 @@
+body, header h1{
+    margin:0px;
+}
+
+html {
+    background: repeating-linear-gradient(#256600, #1d4d00 20px);
+    width: 100%;
+}
+
+body {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    background-image: linear-gradient(#1d4d00, #008241);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow:0px 0px 20px #ffffff;
+    color: #dfdfdf;
+}
+
+
+header {
+    text-align: center;
+    background-image: linear-gradient(#1d4d00, #00b854);
+    border: 2px solid #000000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font: small-caps bold 48px/1 serif;
+    color: #fcffc6;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+footer {
+    margin-top: 30px;
+    background-color: black;
+    border: 1px solid white;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titre {
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 20px;
+    box-shadow:0px 5px 20px #fcffc6;
+    background-color: #900000;
+    border-radius: 20px;
+}
+
+.titre h1 {
+    font-size: 1.3em;
+    padding-top : 5px;
+    padding-bottom: 5px;
+    color: #fcffc6;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.logo {
+    max-height: 100px;
+    width: auto;
+    border: 2px solid black;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.presentation {
+    display: inline-block;
+    box-shadow:0px 5px 15px #000000;
+    text-align: center ;
+    width: 60%;
+    background-color: #fcffc6;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.presentation p{
+    color: #1d4d00;
+    text-align: left;
+    font-size: 1em;
+}
+.presentation h2 {
+    color: #1d4d00;
+    padding : 5px;
+}
+
+
+@media handheld , screen and (max-width:60em){
+    .presentation {
+        width: 70%;
+        font-size: 0.9em;
+    }
+
+}
+
+@media handheld , screen and (max-width:50em){
+
+    body {
+        left: 5%;
+        width: 90%;
+
+    }
+
+    .presentation {
+        width: 80%;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    .titre h1 {
+        font-size: 0.8em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media handheld , screen and (max-width:37em){
+
+    footer {
+        font-size: 0.6em;
+    }
+
+    body {
+        left: 0%;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .presentation {
+        border-style: none;
+    }
+
+    .presentation p {
+        font-size: 0.8em;
+    }
+
+    .titre h1 {
+        font-size: 1.5em;
+    }
+
+    .titre {
+        width: 80%;
+        border-radius: 0px;
+        border-style: none;
+        margin-bottom: 50px;
+    }
+}
+
